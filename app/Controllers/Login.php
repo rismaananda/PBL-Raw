@@ -27,6 +27,7 @@ class Login extends BaseController
 		if (($cek['username'] == $username) && ($cek['password'] == $password)) {
 			// echo "oke";
 			if ($username == 'admin') {
+				session()->set('username', $cek['username']);
 				return redirect()->to('/admin');
 			} else {
 				session()->set('id_login', $cek['id_login']);

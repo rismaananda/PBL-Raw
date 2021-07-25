@@ -14,6 +14,10 @@ class Admin extends BaseController
 
     public function index()
     {
+        if (session()->get('username') == '') {
+            session()->setFlashdata('Failed', 'Anda Belum Login');
+            return redirect()->to('/login');
+        }
         $data = [
             'jml_user' => $this->M_Admin->countUser(),
             'jml_supp' => $this->M_Admin->countSupp(),
