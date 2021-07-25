@@ -1,0 +1,1098 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*===color set*/
+:root {
+  /* DEFAULT */
+  --black: #000;
+  --white: #fff;
+  --purple: #c100ff;
+  /* COLOR */
+  --dark-purple: #60416a;
+  --white-purple: #bbaacc;
+  --gray: #e3e1e1;
+  --dark-black: #0b0d17;
+  --white-blue: #6f8efb;
+  --light-blue: #2ec5ce;
+  --pink: #ff00c7;
+
+  /* COLOR BUBLE */
+  --purple-bubble: #8c30f5;
+  --purple-secondary: #5b3068;
+  --yellow: #ffc444;
+}
+/*---------------*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header .row {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+/*=====================================
+==================NAVBAR STYLEEE===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #554;
+}
+p {
+  color: #554;
+  size: 10px;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.cart-icon {
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  margin-left: 20px;
+  display: none;
+}
+.menu-icon:hover {
+  color: #5b3068;
+}
+/*---- meadia query for menu (responsive navbar)------*/
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul li a:hover {
+    color: #bbaacc;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+/*======Landing Page===========*/
+.landing {
+  flex: 1;
+  text-align: left;
+}
+.landing ul {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 10px;
+}
+.landing ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.btn-login {
+  display: inline-block;
+  background: #bbaacc;
+  color: #5b3068;
+  padding: 5px 30px;
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: 0.5;
+  margin-right: 10px;
+}
+.btn-signup {
+  display: inline-block;
+  background: #5b3068;
+  color: white;
+  padding: 5px 30px;
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: 0.5;
+}
+/*contact landing*/
+.services {
+  padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.services .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #bbaacc;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: #5b3068;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.02);
+}
+
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px;
+}
+
+/*=== Tampilan HEADER HOME PAGE ===*/
+/*==Home atas judul dan gambar==*/
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 10px;
+  margin-left: 20px;
+  padding-right: 10px;
+}
+.about {
+  margin-top: -100px;
+  padding-bottom: 50px;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 280px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 20px 0;
+  margin-left: 10px;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn-home {
+  display: inline-block;
+  background: #5b3068;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5;
+}
+.btn-home:hover {
+  background: #563434;
+  cursor: pointer;
+}
+
+/*======Produk(juga untuk product.html dan product_detail.html)======*/
+.kategori {
+  margin: auto;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title::after {
+  content: "";
+  background: #5b3068;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-search {
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+}
+.search-bar {
+  align-items: center;
+  text-align: end;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.search {
+  padding: 8px;
+  width: 620px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
+  border-radius: 10px;
+  margin-top: -35px;
+  margin-left: 125px;
+}
+.btn-search {
+  background: #5b3068;
+  color: white;
+  padding: 8px;
+  border-radius: 30px;
+  transition: 0.5;
+  width: 150px;
+  margin-right: 125px;
+}
+.btn-search:hover {
+  background: #563434;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: normal;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 250px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%;
+}
+.col-4:hover {
+  transform: translateY(-5px);
+}
+/*-----------all product page-----*/
+.row-2 {
+  justify-content: space-between;
+  margin: 70px auto 50px;
+}
+select {
+  border: 1px solid #563434;
+  padding: 5px;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+}
+.page-btn {
+  margin: 0 auto 80px;
+}
+.page-btn .page-link {
+  display: inline-block;
+  border: 1px solid #563434;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn .page-link:hover {
+  background: #60416a;
+  color: white;
+  transition: 0.5s;
+}
+/*----------Detail Product---------*/
+.single-product {
+  margin-top: 30px;
+}
+.single-product .col-2 img {
+  padding: 0;
+}
+.single-product .col-2 {
+  padding: 20px;
+}
+.single-product h4 {
+  margin: 40px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #563434;
+}
+input:focus {
+  outline: none;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 20%;
+  cursor: pointer;
+}
+
+.btn-detail,
+.btn-detail-edit {
+  display: inline-block;
+  background: coral;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5;
+}
+.btn-detail:hover {
+  background: orangered;
+}
+.btn-detail-edit:hover {
+  background: orangered;
+}
+
+/*=========CART ITEMS======================
+===================================*/
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: var(--dark-purple);
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: var(--dark-purple);
+  font-size: 12px;
+}
+td img {
+  width: 80px;
+  height: 100px;
+  margin: 5px;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table {
+  border-top: 3px solid #5b3068;
+  width: 100%;
+  max-width: 430px;
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+/*===========VENDOR=============
+===============================*/
+.row-vendor {
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.vendor-page {
+  margin: 80px 0;
+}
+.vendor-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vendor-page th {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: var(--dark-purple);
+}
+.vendor-page td {
+  padding: 5px 5px 5px 5px;
+}
+.vendor-action {
+  text-decoration: underline;
+  margin-top: -50px;
+}
+.vendor-info img {
+  width: 190px;
+  height: 280px;
+  padding-top: 10px;
+}
+
+/*------------upload barang----*/
+.col-2-upload {
+  flex-basis: 50%;
+  min-width: 300px;
+  min-height: 1000px;
+}
+fieldset {
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  margin-top: 10x;
+  margin-left: 10px;
+}
+legend {
+  color: white;
+  padding: 8px;
+  background: #5b3068;
+}
+
+.upload label {
+  float: left;
+  font-size: 14px;
+}
+.upload input {
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.upload textarea {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #e6e2f5;
+  padding: 15px 20px;
+  color: #333;
+  border-radius: 0px;
+  resize: none;
+  font-weight: 400;
+}
+.upload p {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.upload label {
+  color: black;
+}
+
+/*==edit barang di detail vendor==*/
+.dalmo {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  padding-left: 20px;
+}
+.dalmo-content {
+  background: white;
+  padding: 10px;
+  padding-left: 100px;
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 3px;
+  min-height: auto;
+}
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2 ease-out;
+}
+
+.dalmo-content-left {
+  position: relative;
+}
+
+.dalmo-form {
+  justify-content: center;
+  align-items: center;
+}
+.dalmo h1 {
+  font-size: 30px;
+  text-align: start;
+  width: 80%;
+}
+.form-validation {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+.form-validation input,
+textarea {
+  display: block;
+  font-size: 18px;
+  padding-left: 0.5rem;
+  padding-bottom: 1px;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  height: 2.5rem;
+  width: 100%;
+}
+.form-validation textarea {
+  background: gainsboro;
+  height: 4rem;
+}
+/*===========CONTACT STYLEE========
+==================================*/
+.small-container-contact {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-contact {
+  max-width: 800px;
+  margin-left: 100px;
+}
+.title-contact {
+  padding-bottom: 5px;
+}
+.title-contact h4 {
+  color: #8c30f5;
+}
+.row-contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+}
+.form-group span {
+  color: red;
+}
+.form-group textarea {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #e6e2f5;
+  padding: 15px 20px;
+  color: #333;
+  border-radius: 0px;
+  resize: none;
+  font-weight: 400;
+}
+.contact-page {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.single-info {
+  padding: 20px;
+}
+.single-info i {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 15px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 40px;
+  background: #8c30f5;
+}
+
+/*=======FOOTERR================
+==================================*/
+footer {
+  position: relative;
+  bottom: 0px;
+  height: 100%;
+  margin-top: 200px;
+  background-color: var(--dark-black);
+}
+
+.product-Footer span {
+  position: absolute;
+  font-size: 12px;
+  color: var(--light-blue);
+  font-family: "Nanum Pen Script", cursive;
+  margin-left: 5px;
+}
+footer a {
+  font-weight: 200;
+  margin: 5px 0px;
+}
+footer a,
+footer h4 {
+  color: var(--white) !important;
+}
+
+.footer-Container {
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.product-Footer,
+.company-Footer,
+.support-Footer {
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+/* FOOTER SOSMED */
+.footer-Sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 12vh;
+}
+.footer-Sosmed a {
+  color: var(--white);
+  font-size: 20px;
+  margin-left: 150px;
+}
+.sosmed-Links {
+  color: var(--white);
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+.sosmed-Links i {
+  margin: 0px 5px;
+}
+.sosmed-Links i:hover {
+  cursor: pointer;
+}
+
+/*----LOGIN SIGNUP STYLEEEE---------------*/
+.navbar-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+/* BUBBLE CSS */
+.dark-Purple,
+.yellow,
+.purple-md {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 3px var(--black);
+}
+.purple {
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  background-color: var(--dark-purple);
+  opacity: 0.8;
+  height: 400px;
+  width: 400px;
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 0 3px var(--black);
+}
+.dark-Purple {
+  top: 40%;
+  right: 15%;
+  background-color: var(--purple-bubble);
+  opacity: 0.5;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+}
+.yellow {
+  top: 20%;
+  left: -10%;
+  background-color: var(--yellow);
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+  z-index: 1;
+}
+.purple-md {
+  top: 30%;
+  left: -10%;
+  background-color: var(--purple-bubble);
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+}
+/* FORM LOGIN CENTER */
+.form-Login {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.form-Login img {
+  height: 300px;
+  width: 300px;
+  margin-left: -40px;
+}
+/* Menyisipkan icon di form input dan memberi lebar pada form */
+form,
+form .input-icon {
+  width: 100%;
+}
+form .input-icon {
+  position: relative;
+  margin-left: -40px;
+}
+form p {
+  margin-left: -30px;
+}
+form input {
+  border: 1px solid #eee;
+  border-radius: 20px;
+  color: #777;
+  outline: none;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  font-size: inherit;
+  display: block;
+  padding: 8px;
+  padding-left: 30px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: var(--gray);
+}
+/**Mengatur posisi icon di dalam form**/
+form input + i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #777;
+}
+
+form input:focus {
+  border: 1px solid #0099ff;
+  color: #000;
+}
+form input:focus + i {
+  color: #0099ff;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+
+form > div:last-child {
+  display: inline-block;
+  width: 100%;
+}
+.btn-Login {
+  margin: 40px 100px;
+  margin-left: 30px;
+}
+.btn-Login a {
+  background-color: var(--purple);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--white);
+}
+.btn-Login a:hover {
+  background-color: var(--white-blue);
+}
+
+/*----======== RESPONSIVE mediaa ========------*/
+@media only screen and (max-width: 1120px) {
+  .search {
+    width: 580px;
+    margin-left: 125px;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .search {
+    width: 560px;
+    margin-left: 125px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .list-items {
+    margin-bottom: -700px;
+    background-color: black;
+  }
+  .list-items-active {
+    margin-bottom: -2000px;
+  }
+
+  .search {
+    width: 500px;
+    margin-left: 125px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .search {
+    width: 400px;
+    margin-left: 125px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .search {
+    width: 350px;
+    margin-left: 125px;
+  }
+  .btn-search {
+    width: 100px;
+    margin-right: 125px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .row-vendor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .col-2,
+  .col-4 {
+    flex-basis: 100%;
+  }
+
+  .footer-Container {
+    align-items: center;
+  }
+  /*detail product*/
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .single-product img {
+    padding: 0 10px 10px 10px;
+  }
+
+  /*---cart-----*/
+  .cart-info p {
+    display: none;
+  }
+
+  .col-contact {
+    max-width: 800px;
+    margin-left: 1px;
+  }
+  .small-container-contact {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contact-page {
+    margin-left: 20px;
+    margin-right: -12px;
+    margin-top: 30px;
+  }
+  .search {
+    width: 250px;
+    margin-left: 100px;
+  }
+  .btn-search {
+    width: 100px;
+    margin-right: 100px;
+  }
+
+  .modal-content {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .search {
+    width: 250px;
+    margin-left: 125px;
+  }
+  .btn-search {
+    width: 100px;
+    margin-right: 125px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col-contact {
+    max-width: 800px;
+    margin-left: 1px;
+  }
+  .small-container-contact {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contact-page {
+    margin-left: 20px;
+    margin-right: -12px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /*detail product*/
+  .single-product {
+    margin-top: 10px;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 22px;
+  }
+  .btn-detail,
+  .btn-detail-edit {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .single-product select {
+    display: block;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .single-product input {
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 17px;
+    margin-right: 10px;
+    border: 1px solid #563434;
+  }
+  .single-product h4 {
+    margin: 25px 0;
+    font-size: 18px;
+  }
+
+  .search {
+    width: 250px;
+    margin-left: 125px;
+  }
+  .btn-search {
+    width: 100px;
+    margin-right: 125px;
+  }
+  .form-validation input,
+  textarea {
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 10px;
+    height: 2.5rem;
+  }
+  .dalmo-content {
+    padding-left: 70px;
+  }
+}
+.sosmed-Links a i {
+  color: var(--black);
+}
+.btn-vendor {
+  color: var(--white);
+  background-color: var(--dark-purple);
+}
+.col-contact {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .btn-vendor {
+    color: var(--white);
+    background-color: var(--dark-purple);
+    margin-top: -150px;
+  }
+  .col-contact {
+    max-width: 800px;
+    margin-left: 1px;
+  }
+  .small-container-contact {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contact-page {
+    margin-left: 12px;
+    margin-right: -12px;
+    margin-top: 30px;
+  }
+  .search {
+    width: 200px;
+    margin-left: 5px;
+  }
+  .btn-search {
+    width: 70px;
+    margin-right: 5px;
+  }
+  .dalmo-content {
+    padding-left: 30px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .search {
+    width: 150px;
+    margin-left: 5px;
+  }
+  .btn-search {
+    width: 70px;
+    margin-right: 5px;
+  }
+  .dalmo-content {
+    padding-left: 20px;
+    width: 80%;
+  }
+}

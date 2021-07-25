@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+/*===color set*/
+:root {
+  /* DEFAULT */
+  --black: #000;
+  --white: #fff;
+  --purple: #c100ff;
+  /* COLOR */
+  --dark-purple: #60416a;
+  --white-purple: #bbaacc;
+  --gray: #e3e1e1;
+  --dark-black: #0b0d17;
+  --white-blue: #6f8efb;
+  --light-blue: #2ec5ce;
+  --pink: #ff00c7;
+
+  /* COLOR BUBLE */
+  --purple-bubble: #8c30f5;
+  --purple-secondary: #5b3068;
+  --yellow: #ffc444;
+}
+/*---------------*/
+
+.sosmed-Links a i {
+  color: var(--black);
+  margin-left: 10px;
+}
+.content-login {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-submit {
+  border-radius: 20px;
+  padding: 8px 30px;
+  background-color: var(--purple);
+  color: var(--white);
+  margin-left: 80px;
+}
+.btn-submit:hover {
+  background-color: var(--purple-bubble);
+}
+
+/* BUBBLE ANIMATION */
+.dark-Purple,
+.yellow,
+.purple-md {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 3px var(--black);
+}
+.purple {
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  background-color: var(--dark-purple);
+  opacity: 0.8;
+  height: 400px;
+  width: 400px;
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 0 3px var(--black);
+}
+.dark-Purple {
+  top: 40%;
+  right: 15%;
+  background-color: var(--purple-bubble);
+  opacity: 0.5;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+}
+.yellow {
+  top: 20%;
+  left: -10%;
+  background-color: var(--yellow);
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+  z-index: 1;
+}
+.purple-md {
+  top: 30%;
+  left: -10%;
+  background-color: var(--purple-bubble);
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+}
+
+.login,
+.btn-dark-purple {
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: var(--white);
+}
+.login:hover,
+.btn-dark-purple:hover {
+  background-color: var(--gray);
+}
+.login {
+  background-color: var(--purple);
+}
+.btn-dark-purple {
+  background-color: var(--dark-purple);
+}
+
+/* ===========================
+CONTACT
+============================== */
+.col-md-3:hover {
+  transform: translateY(-5px);
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ===========================
+Contact
+============================== */
+.card {
+  background-color: var(--white-purple);
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* ===========================
+FOOTER
+============================== */
+.footer {
+  background-color: var(--dark-black);
+}
+.footer-sosmed {
+  background-color: var(--black);
+}
+span {
+  color: var(--light-blue);
+}
+
+/* ===============================
+FOOTER
+================================== */
+footer {
+  position: relative;
+  bottom: 0px;
+  height: 100%;
+  margin-top: 200px;
+  background-color: var(--dark-black);
+}
+
+.product-Footer span {
+  position: absolute;
+  font-size: 12px;
+  color: var(--light-blue);
+  font-family: 'Nanum Pen Script', cursive;
+  margin-left: 5px;
+}
+footer a {
+  font-weight: 200;
+  margin: 5px 0px;
+}
+footer a,
+footer h4 {
+  color: var(--white) !important;
+}
+
+.footer-Container {
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.product-Footer,
+.company-Footer,
+.support-Footer {
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+/* FOOTER SOSMED */
+.footer-Sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 12vh;
+}
+.footer-Sosmed a {
+  color: var(--white);
+  font-size: 20px;
+  margin-left: 150px;
+}
+.sosmed-Links {
+  color: var(--white);
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+.sosmed-Links i {
+  margin: 0px 5px;
+}
+.sosmed-Links i:hover {
+  cursor: pointer;
+}
+
+.fade {
+  opacity: 0;
+  animation: fade 0.5s forwards;
+}
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===========================
+RESPONSIVE 
+============================== */
+@media screen and (max-width: 1000px) {
+  .purple {
+    height: 200px;
+    width: 200px;
+  }
+  .dark-Purple {
+    height: 100px;
+    width: 100px;
+  }
+  .yellow {
+    height: 200px;
+    width: 200px;
+  }
+  .purple-md {
+    height: 200px;
+    width: 200px;
+  }
+  .images-landing {
+    margin-top: 50px;
+  }
+  .images-landing {
+    height: 350px;
+    width: 350px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .services {
+    margin-top: 300px;
+  }
+  .footer-sosmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .list-items {
+    margin-top: -1000px;
+    background-color: black;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dark-Purple,
+  .yellow,
+  .purple-md,
+  .purple {
+    display: none;
+  }
+  .landing-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .images-landing {
+    height: 250px;
+    width: 250px;
+  }
+  .images-products {
+    height: 100px;
+    width: 100px;
+  }
+  .product-Footer,
+  .company-Footer,
+  .support-Footer {
+    margin-top: 100px;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
