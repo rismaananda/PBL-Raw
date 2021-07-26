@@ -53,8 +53,11 @@
 			</form>
 		</div>
 	</div>
-	<!-- </div>
+</div>
+<!-- </div>
 </div>
 </div> -->
-	</section>
-	<!--/ End Contact -->
+</section>
+</div>
+
+<!--/ End Contact -->

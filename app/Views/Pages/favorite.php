@@ -30,7 +30,7 @@
                         <p><?= $row['alamat']; ?></p>
                     </div>
                 </td>
-                <td> <a href="#" class="btn-home">Rental</a>
+                <td> <a href="<?= $row['link_vendor']; ?>" class="btn-home">Rental</a>
                     <a href="/favorite/delete/<?= $row['id_fav']; ?>" onclick="return confirm('Are you sure want to delete this?');" class="btn-home">Remove</a>
                 </td>
             </tr>

@@ -49,7 +49,7 @@ class Vendor extends BaseController
         if (empty($data['product'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Product gaada bro');
         }
-        echo view('layout/header-boots', $data);
+        echo view('layout/header', $data);
         echo view('pages/detail_vendor');
         echo view('layout/footer');
     }

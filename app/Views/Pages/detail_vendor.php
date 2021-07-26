@@ -1,7 +1,7 @@
 <!-------Product Detailsss---->
 <div class="small-container single-product">
   <div class="row">
-    <div class="col-5">
+    <div class="col-2">
       <img src="/Assets/images/<?= $product['input_gambar']; ?>" width="100%" id="ProductImg" />
       <br>
       <br>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-2">
       <p>Vendor / Product</p>
       <h1><?= $product['nama_product']; ?></h1>
       <h4>Vendor: <?= $product['nama']; ?></h4>
@@ -142,4 +142,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
