@@ -25,7 +25,7 @@
       <h1><?= $product['nama_product']; ?></h1>
       <h4>Vendor: <?= $product['nama']; ?></h4>
       <h4>Rp. <?= $product['harga']; ?></h4>
-      <a href="" class="btn-detail">Rent this Product</a> <span>
+      <a href="<?= $product['link_vendor']; ?>" class="btn-detail">Rent this Product</a> <span>
         <form action="/favorite/favorite" method="post">
           <?= csrf_field(); ?>
           <button type="submit" class="btn-detail">Add To Favorite</button>
