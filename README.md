@@ -1,3 +1,9 @@
+This project is built in teams from Polibatam Informatics Engineering
+1. Risma Ananda Harby 3311901006
+2. Anissa Nabila 3311901007
+3. Risky Sehat Tua S 3311901064
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
